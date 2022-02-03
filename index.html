@@ -25,7 +25,7 @@
   </head>
   <body>
     <!--nav bar-->
-    <nav class="navbar navbar-expand-md bg-info navbar-dark">
+    <nav class="navbar navbar-expand-md bg-info navbar-dark fixed-top">
       <a class="navbar-brand" href="#">My Website</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -36,17 +36,24 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="page1.html">Page 1</a>
+            <a class="nav-link" href="page1.html" data-toggle="tooltip" title="This is Page 1!">Page 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="page2.html">Page 2</a>
+            <a class="nav-link" href="page2.html" data-toggle="tooltip" title="This is Page 2!">Page 2</a>
           </li>    
         </ul>
       </div>  
     </nav>
     
     <!--page content-->
-    <h1>Home Page</h1>
+    <h1><br><br>Home Page</h1>
+	<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+	
+	<script>
+	$(document).ready(function(){
+	  $('[data-toggle="tooltip"]').tooltip();   
+	});
+	</script>
 
   </body>
 </html>
